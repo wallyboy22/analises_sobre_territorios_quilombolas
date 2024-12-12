@@ -8,6 +8,8 @@ var biomas = ee.FeatureCollection("projects/ee-babecsilva-consultorias/assets/IS
 var landcover = ee.Image('projects/mapbiomas-public/assets/brazil/lulc/collection9/mapbiomas_collection90_integration_v1');
 
 var img_biomas = ee.Image().paint(biomas,'CD_Bioma');
+// --- --- --- 
+
 
 // --- --- --- print and plot
 print('landcover',landcover);
@@ -45,7 +47,6 @@ var nivels = {
       32:'Nível 2',
       29:'Nível 2',
       50:'Nível 2',
-      13:'Nível 2',
       14:'Nível 1',
       15:'Nível 2',
       18:'Nível 2',
@@ -86,7 +87,6 @@ var nivels = {
     32:'Natural',
     29:'Antrópico',
     50:'Natural',
-    13:'Natural',
     14:'Antrópico',
     15:'Antrópico',
     18:'Antrópico',
@@ -111,7 +111,7 @@ var nivels = {
     26:'Antrópico',
     33:'Antrópico',
     31:'Antrópico',
-    27:'Antrópico', 
+    27:'Não observado',  
   }),
   lulc_mbc09_nivel_1: ee.Dictionary({
     0:'Área não vegetada',  
@@ -127,7 +127,6 @@ var nivels = {
     32:'Formação Natural não Florestal',
     29:'Área não vegetada',
     50:'Formação Natural não Florestal',
-    13:'Formação Natural não Florestal',
     14:'Agropecuária',
     15:'Agropecuária',
     18:'Agropecuária',
@@ -152,7 +151,7 @@ var nivels = {
     26:'Corpos D´água',
     33:'Corpos D´água',
     31:'Corpos D´água',
-    27:'Área não vegetada', 
+    27:'Não observado',   
   }),
   lulc_mbc09_nivel_1_1: ee.Dictionary({
     0:'Outros',  
@@ -168,7 +167,6 @@ var nivels = {
     32:'Formação Campestre',
     29:'Outros',
     50:'Formação Campestre',
-    13:'Formação Campestre',
     14:'Agropecuária',
     15:'Pastagem',
     18:'Agricultura',
@@ -193,7 +191,7 @@ var nivels = {
     26:'Outros',
     33:'Outros',
     31:'Outros',
-    27:'Outros',
+    27:'Não observado',  
   }),
   lulc_mbc09_nivel_2: ee.Dictionary({
     0:'Outras Áreas não Vegetadas',  
@@ -209,7 +207,6 @@ var nivels = {
     32:'Apicum',
     29:'Afloramento Rochoso',
     50:'Restinga herbácea',
-    13:'Outras Formações não Florestais',
     14:'Agropecuária',
     15:'Pastagem',
     18:'Agricultura',
@@ -234,7 +231,7 @@ var nivels = {
     26:'Corpos D´água',
     33:'Rios, Lagos e Oceano',
     31:'Aquicultura',
-    27:'Outras Áreas não Vegetadas',
+    27:'Não observado',  
   }),
   lulc_mbc09_nivel_3: ee.Dictionary({
     0:'Outras Áreas não Vegetadas',  
@@ -250,7 +247,6 @@ var nivels = {
     32:'Apicum',
     29:'Afloramento Rochoso',
     50:'Restinga herbácea',
-    13:'Outras Formações não Florestais',
     14:'Agropecuária',
     15:'Pastagem',
     18:'Agricultura',
@@ -275,7 +271,7 @@ var nivels = {
     26:'Corpos D´água',
     33:'Rios, Lagos e Oceano',
     31:'Aquicultura',
-    27:'Outras Áreas não Vegetadas',
+    27:'Não observado',  
   }),
   lulc_mbc09_nivel_4: ee.Dictionary({
     0:'Outras Áreas não Vegetadas',    
@@ -291,7 +287,6 @@ var nivels = {
     32:'Apicum',
     29:'Afloramento Rochoso',
     50:'Restinga herbácea',
-    13:'Outras Formações não Florestais',
     14:'Agropecuária',
     15:'Pastagem',
     18:'Agricultura',
@@ -316,7 +311,7 @@ var nivels = {
     26:'Corpos D´água',
     33:'Rios, Lagos e Oceano',
     31:'Aquicultura',
-    27:'Outras Áreas não Vegetadas',  
+    27:'Não observado',  
   }),
 };
 // --- --- calculate
