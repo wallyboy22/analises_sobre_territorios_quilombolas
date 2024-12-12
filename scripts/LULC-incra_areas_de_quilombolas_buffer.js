@@ -323,7 +323,7 @@ landcover.bandNames().evaluate(function(bandnames){
       .reduceRegions({
         collection:quilombolas,
         reducer:ee.Reducer.sum().group(1,'classe'),
-        scale:500,
+        scale:30,
       }).map(function(a){
         return ee.FeatureCollection(ee.List(a.get('groups')).map(function(obj){
           obj = ee.Dictionary(obj);
