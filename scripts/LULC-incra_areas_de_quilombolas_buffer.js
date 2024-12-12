@@ -333,6 +333,7 @@ landcover.bandNames().evaluate(function(bandnames){
           
           return ee.Feature(null)
             .set({
+              'year':ee.Number.parse(bandname.slice(-4)),
               'area_ha':obj.get('sum'),
               'classe_int':classe_int,
               'bioma_int':classe_territory,
@@ -381,6 +382,7 @@ landcover.bandNames().evaluate(function(bandnames){
     fileNamePrefix:'LULC-incra_areas_de_quilombolas',
     fileFormat:'csv',
     selectors:[
+      'year',
       'area_ha',
       'classe_int',
       'bioma',
@@ -417,6 +419,7 @@ landcover.bandNames().evaluate(function(bandnames){
           
           return ee.Feature(null)
             .set({
+              'year':ee.Number.parse(bandname.slice(-4)),
               'area_ha':obj.get('sum'),
               'classe_int':classe_int,
               'bioma_int':classe_territory,
@@ -465,6 +468,7 @@ landcover.bandNames().evaluate(function(bandnames){
     fileNamePrefix:'LULC-incra_areas_de_quilombolas_buffer',
     fileFormat:'csv',
     selectors:[
+      'year',
       'area_ha',
       'classe_int',
       'bioma',
