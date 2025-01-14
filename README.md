@@ -10,28 +10,20 @@ Este repositório contém códigos, dados e documentações relacionados à aná
 ## Acesso aos Dados
 
 - **Territórios Quilombolas:**
-  - [Download em formato SHP/CSV](https://certificacao.incra.gov.br/csv_shp/export_shp.py)
-  - [Dados no Google Earth Engine](https://code.earthengine.google.com/?asset=projects/ee-babecsilva-consultorias/assets/incra_areas_de_quilombolas)
+  - [Download oficial do shapefile original](https://certificacao.incra.gov.br/csv_shp/export_shp.py)
+  - [Asset no Google Earth Engine](https://code.earthengine.google.com/?asset=projects/ee-babecsilva-consultorias/assets/incra_areas_de_quilombolas)
 
 - **Séries Temporais:**
-  - Buffers de 10 km: [Buffer somente](https://code.earthengine.google.com/?asset=projects/ee-babecsilva-consultorias/assets/incra_areas_de_quilombolas_somente_buffer_10km) | [Buffer completo](https://code.earthengine.google.com/?asset=projects/ee-babecsilva-consultorias/assets/incra_areas_de_quilombolas_buffer_10km)
+  - Assets dos poligonos dos Buffers de 10 km: [Somente buffer, sem área interna](https://code.earthengine.google.com/?asset=projects/ee-babecsilva-consultorias/assets/incra_areas_de_quilombolas_somente_buffer_10km) | [Buffer e área interna](https://code.earthengine.google.com/?asset=projects/ee-babecsilva-consultorias/assets/incra_areas_de_quilombolas_buffer_10km)
   - Código para aplicar buffers: [Script no GitHub](https://github.com/wallyboy22/analises_sobre_territorios_quilombolas/blob/main/scripts/apply_buffer_in_shape.js)
 
 - **Biomas:**
-  - [Download em formato SHP/CSV](https://certificacao.incra.gov.br/csv_shp/export_shp.py)
+  - [Download oficial do shapefile original]([https://certificacao.incra.gov.br/csv_shp/export_shp.py](https://www.ibge.gov.br/geociencias/informacoes-ambientais/vegetacao/15842-biomas.html?=&t=downloads)
   - [Dados no Google Earth Engine](https://code.earthengine.google.com/?asset=projects/ee-babecsilva-consultorias/assets/ISA/ibge_biomas_250mil)
 
 ## Análise por Tipo de Uso
 
-- [Código no GitHub](https://github.com/wallyboy22/analises_sobre_territorios_quilombolas/blob/main/scripts/LULC-incra_areas_de_quilombolas_buffer.js)
-
-## Como Contribuir
-
-1. Faça um fork deste repositório.
-2. Crie um branch para suas alterações: `git checkout -b feature/nova-analise`
-3. Commit suas mudanças: `git commit -m 'Adiciona nova análise'`
-4. Faça push para o branch: `git push origin feature/nova-analise`
-5. Envie um pull request.
+- [Código do Google Earth Engine no GitHub](https://github.com/wallyboy22/analises_sobre_territorios_quilombolas/blob/main/scripts/LULC-incra_areas_de_quilombolas_buffer.js)
 
 ## Licença
 
