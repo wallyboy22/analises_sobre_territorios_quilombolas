@@ -31,4 +31,4 @@ Este projeto está licenciado sob a licença MIT. Consulte o arquivo `LICENSE` p
 
 ---
 
-Para mais informações, entre em contato com [ISA]().
+Para mais informações, entre em contato com [Bárbara e Wallace](emails).
